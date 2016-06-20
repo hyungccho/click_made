@@ -1,5 +1,5 @@
 {
-  "name": "flux_test",
+  "name": "click_made",
   "version": "1.0.0",
   "description": "== README",
   "main": "index.js",
@@ -11,20 +11,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hyungccho/flux_test.git"
+    "url": "git+https://github.com/hyungccho/click_made.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hyungccho/flux_test/issues"
+    "url": "https://github.com/hyungccho/click_made/issues"
   },
-  "homepage": "https://github.com/hyungccho/flux_test#readme",
+  "homepage": "https://github.com/hyungccho/click_made#readme",
   "dependencies": {
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
+    "flux": "^2.1.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "webpack": "^1.13.1"

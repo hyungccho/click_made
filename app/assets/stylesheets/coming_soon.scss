@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Armonioso";
+  src: font_url('armonioso_regular.otf') format('opentype')
+}
+
+#logo {
+  color: white;
+  font-family: Armonioso;
+}
