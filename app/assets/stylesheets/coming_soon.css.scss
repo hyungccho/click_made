@@ -1,0 +1,60 @@
+@import 'compass';
+@import 'fonts';
+
+#outer-wrap {
+  width: 525px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 30px 40px;
+  background: transparent;
+  float: left;
+  color: white;
+  padding-left: 30px;
+  
+  #logo {
+    font-size: 3.5em;
+    @include bulletto;
+    transform: rotateZ(-5deg) skewX(5deg);
+    display: inline-block;
+    margin: 20px 0 0 -30px;
+  }
+  
+  .white-text {
+    color: white;
+  }
+  
+  .title {
+    font-family: 'Bitter';
+    font-size: 1.8em;
+    margin-top: 40px;
+  }
+  
+  .grey-description {
+    font-family: 'Hind';
+    color: #7c7c7c;
+    margin-top: 20px;
+    line-height: 22px;
+  }
+  
+  input.email {
+    border-radius: 3px;
+    width: 80%;
+    margin: 20px auto;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 15px;
+    font-family: 'Bitter';
+    letter-spacing: 0.5px;
+    color: #232323;
+    font-size: 0.7em;
+    float: left;
+    
+    &:focus {
+      outline: none;
+      border-color: #BD0E0E;
+      box-shadow: 0 0 7px #BD0E0E;
+    }
+  }
+}

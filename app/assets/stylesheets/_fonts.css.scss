@@ -1,0 +1,12 @@
+@import 'compass';
+
+@include font-face("ArmoniosoRegular", font-files("armonioso_regular.otf"));
+@include font-face("Bulletto", font-files("bulletto-killa.regular.ttf"));
+
+@mixin armonioso_reg {
+  font-family: ArmoniosoRegular;
+}
+
+@mixin bulletto {
+  font-family: Bulletto;
+}
