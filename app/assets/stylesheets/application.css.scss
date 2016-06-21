@@ -22,9 +22,14 @@ body, html {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #232323;
 }
 
 p {
   margin: 0;
+}
+
+.noscroll {
+  position: fixed; 
+  overflow-y: scroll;
+  width: 100%;
 }
