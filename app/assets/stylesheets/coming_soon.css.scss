@@ -47,14 +47,23 @@
     .grey-description {
       font-family: 'Hind';
       color: #999999;
-      margin-top: 30px;
       line-height: 22px;
+    }
+    
+    .upper-description {
+      margin-top: 40px;
+      float: left;
+    }
+    
+    .lower-description {
+      margin-top: 40px;
+      float: left;
     }
     
     input.email {
       border-radius: 3px;
       width: 80%;
-      margin: 30px auto;
+      margin: 40px auto 0;
       height: 40px;
       line-height: 40px;
       vertical-align: middle;
@@ -84,13 +93,53 @@
       font-size: 2em;
       line-height: 32.5px;
       vertical-align: middle;
-      margin: 32.5px 0 0 10px;
+      margin: 41.5px 0 0 10px;
       
       &:hover {
         cursor: pointer;
         background-color: #F82020;
         transition: background-color 0.2s;
       }
+    }
+    
+    .social-media-wrapper {
+      width: 300px;
+      min-width: 300px;
+      float: left;
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0 0 85px;
+      
+      .icon {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+      }
+      
+      .facebook {
+        background-image: url("/assets/facebook.png");
+      }
+      
+      .instagram {
+        background-image: url("/assets/instagram.png");
+      }
+      
+      .twitter {
+        background-image: url("/assets/twitter.png");
+      }
+      
+      .google {
+        background-image: url("/assets/googleplus.png")
+      }
+    }
+    
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
     }
   }
 }
