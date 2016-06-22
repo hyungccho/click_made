@@ -20,7 +20,7 @@
     width: 525px;
     height: calc(100% - 60px);
     box-sizing: border-box;
-    margin: 30px 40px;
+    margin: 45px 60px;
     background: transparent;
     float: left;
     color: white;
@@ -29,7 +29,7 @@
     #logo {
       font-size: 3.5em;
       @include bulletto;
-      transform: rotateZ(-5deg) skewX(5deg);
+      transform: rotateZ(-3deg) skewX(-5deg);
       display: inline-block;
       margin: 20px 0 0 -30px;
     }
@@ -63,7 +63,7 @@
       font-family: 'Bitter';
       letter-spacing: 0.5px;
       color: #232323;
-      font-size: 0.7em;
+      font-size: 0.8em;
       float: left;
       
       &:focus {
@@ -82,9 +82,9 @@
       width: 35px;
       height: 35px;
       font-size: 2em;
-      line-height: 30px;
+      line-height: 32.5px;
       vertical-align: middle;
-      margin: 33px 0 0 10px;
+      margin: 32.5px 0 0 10px;
       
       &:hover {
         cursor: pointer;
