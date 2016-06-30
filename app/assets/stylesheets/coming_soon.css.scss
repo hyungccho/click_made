@@ -61,6 +61,7 @@
     }
     
     input.email {
+      position: relative;
       border-radius: 3px;
       width: 80%;
       margin: 40px auto 0;
@@ -77,12 +78,17 @@
       
       &:focus {
         outline: none;
-        border-color: #BD0E0E;
-        box-shadow: 0 0 7px #BD0E0E;
       }
     }
     
+    input.invalid {
+      transition: box-shadow 300ms;
+      border-color: #C14644;
+      box-shadow: 0 0 3px 3px #C14644;
+    }
+    
     span.submit {
+      position: relative;
       display: inline-block;
       float: left;
       border-radius: 5px;
@@ -102,15 +108,20 @@
       }
     }
     
+    span.success {
+      background-color: #339532;
+      
+      &:hover {
+        cursor: default;
+        background-color: #339532;
+      }
+    }
+    
     .loading {
       background-size: 60%;
       background-image: url('/assets/rolling.gif');
       background-position: center;
-      background-repeat: no-repeat
-    }
-    
-    .fa-check {
-      transition: all 0.6s;
+      background-repeat: no-repeat;
     }
     
     .social-media-wrapper {

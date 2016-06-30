@@ -14,6 +14,7 @@ function submitEmail () {
       url: '/api/emails',
       success: function () {
         addSuccessButton();
+        $('.submit').off('click')
       },
       error: function () {
         toggleLoader(false);
@@ -22,6 +23,7 @@ function submitEmail () {
   } else {
     // Invalid e-mail format
     toggleLoader(false);
+    alertInvalidEmailFormat();
   }
 }
 
@@ -44,8 +46,22 @@ function toggleLoader (bool) {
   }
 }
 
+function toggleSubmit (e) {
+  if (e.keyCode == 13) {
+    submitEmail()
+  }
+}
+
 function addSuccessButton () {
-  $('.submit').removeClass('fa fa-plus loading').addClass('fa fa-check');
+  $('.submit').removeClass('fa fa-plus loading').addClass('fa fa-check success');
+}
+
+function alertInvalidEmailFormat () {
+  $('.email').addClass('invalid')
+  
+  setTimeout(function () {
+    $('.email').removeClass('invalid');
+  }, 3000);
 }
 
 // Listener for triggering e-mail submit
@@ -58,4 +74,5 @@ $(document).ready(function () {
   });
   
   $(".submit").on('click', submitEmail);
+  $(".email").on('keypress', toggleSubmit);
 });
