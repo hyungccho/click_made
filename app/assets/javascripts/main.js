@@ -13,8 +13,11 @@ function submitEmail () {
       },
       url: '/api/emails',
       success: function () {
-        addSuccessButton();
         $('.submit').off('click')
+        
+        setTimeout(function () {
+          addSuccessButton();
+        }, 1500);
       },
       error: function () {
         toggleLoader(false);
