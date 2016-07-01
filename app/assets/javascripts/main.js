@@ -43,7 +43,7 @@ function isValidEmail(email) {
 
 function toggleLoader (bool) {
   if (bool) {
-    $('.submit').stop(true, false).addClass('loading', { duration: 500 });
+    $('.submit').stop(true, false).addClass('loading');
     $('.submit').stop(true, false).removeClass('fa fa-plus', { duration: 500 })
   } else {
     $('.submit').removeClass('loading').addClass('fa fa-plus')
