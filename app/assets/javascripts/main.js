@@ -14,6 +14,7 @@ function submitEmail () {
       url: '/api/emails',
       success: function () {
         $('.submit').off('click')
+        $('.email').off('keypress')
         
         setTimeout(function () {
           addSuccessButton();
